@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(170, 0, 0);
+}
+
+.quote-card {
+    padding: 5%;
+    margin: 5%;
+    margin-top: 8%;
+    margin-bottom: 0px;
+    background-color: rgba(155, 155, 155, 0.3);
+}
+
+.tweeter, .new-quote {
+    height: 100%;
+    padding: 20px;
+}
+
+.buttons {
+    width: 100%;
+}
+
+.tweeter {
+    float: left;
+}
+
+.new-quote {
+    float: right;
+}
+
+#tweet-quote, #new-quote {
+    font-size: 20pt;
+}
+
+a, a:hover { 
+    color: inherit;
+}
+
+.signature {
+    width: 100%;
+    margin: auto;
+    margin-top: 1%;
+    padding-top: 0px;
+    font-size: 10pt;
+}
+
+.new-quote, .tweeter {
+    cursor: pointer;
+}
+
+.new-quote:hover, .tweeter:hover {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.blockquote-footer {
+    color: black;
+}
+
+.the-quote, .the-author {
+    opacity: 0;
+}
+
+.name, .quote-source {
+    text-decoration: underline;
+}
