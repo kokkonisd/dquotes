@@ -1,5 +1,5 @@
-var twitterUrl = 'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=';
-var quotesUrl = 'https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1';
+var twitterUrl = 'https://twitter.com/intent/tweet?hashtags=designquotes&related=freecodecamp&text=';
+var quotesUrl = 'https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand';
 var darkLimit = 40;
 var animationSpeed = 500;
 
@@ -77,9 +77,9 @@ $(document).ready(function() {
                 // grab the first quote from the array
                 var quote = data.shift();
                 // treat the quote text and store it
-                currentQuote = treatQuoteText(quote.content);
+                currentQuote = treatQuoteText(quote.content.rendered);
                 // store the author's name
-                currentAuthor = quote.title;
+                currentAuthor = quote.title.rendered;
           
                 // set the html elements to the quote & author text
                 $(".the-quote").html('"' + currentQuote+ '"');
